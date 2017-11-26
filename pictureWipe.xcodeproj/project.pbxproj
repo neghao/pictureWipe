@@ -15,6 +15,7 @@
 		0A57B4D91D04420D00BA9D56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A57B4D71D04420D00BA9D56 /* LaunchScreen.storyboard */; };
 		0A57B4E41D04420D00BA9D56 /* pictureWipeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A57B4E31D04420D00BA9D56 /* pictureWipeTests.m */; };
 		0A57B4EF1D04420D00BA9D56 /* pictureWipeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A57B4EE1D04420D00BA9D56 /* pictureWipeUITests.m */; };
+		0A57B4FD1D04476F00BA9D56 /* IMG_20150205_144215.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A57B4FC1D04476F00BA9D56 /* IMG_20150205_144215.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A57B4C61D04420D00BA9D56 /* pictureWipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pictureWipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A57B4C61D04420D00BA9D56 /* 图片裁剪.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "图片裁剪.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A57B4CA1D04420D00BA9D56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A57B4CC1D04420D00BA9D56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A57B4CD1D04420D00BA9D56 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		0A57B4EA1D04420D00BA9D56 /* pictureWipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pictureWipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A57B4EE1D04420D00BA9D56 /* pictureWipeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pictureWipeUITests.m; sourceTree = "<group>"; };
 		0A57B4F01D04420D00BA9D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A57B4FC1D04476F00BA9D56 /* IMG_20150205_144215.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_20150205_144215.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +93,7 @@
 		0A57B4C71D04420D00BA9D56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A57B4C61D04420D00BA9D56 /* pictureWipe.app */,
+				0A57B4C61D04420D00BA9D56 /* 图片裁剪.app */,
 				0A57B4DF1D04420D00BA9D56 /* pictureWipeTests.xctest */,
 				0A57B4EA1D04420D00BA9D56 /* pictureWipeUITests.xctest */,
 			);
@@ -106,6 +108,7 @@
 				0A57B4CF1D04420D00BA9D56 /* ViewController.h */,
 				0A57B4D01D04420D00BA9D56 /* ViewController.m */,
 				0A57B4D21D04420D00BA9D56 /* Main.storyboard */,
+				0A57B4FC1D04476F00BA9D56 /* IMG_20150205_144215.jpg */,
 				0A57B4D51D04420D00BA9D56 /* Assets.xcassets */,
 				0A57B4D71D04420D00BA9D56 /* LaunchScreen.storyboard */,
 				0A57B4DA1D04420D00BA9D56 /* Info.plist */,
@@ -157,7 +160,7 @@
 			);
 			name = pictureWipe;
 			productName = pictureWipe;
-			productReference = 0A57B4C61D04420D00BA9D56 /* pictureWipe.app */;
+			productReference = 0A57B4C61D04420D00BA9D56 /* 图片裁剪.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0A57B4DE1D04420D00BA9D56 /* pictureWipeTests */ = {
@@ -207,6 +210,7 @@
 				TargetAttributes = {
 					0A57B4C51D04420D00BA9D56 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 69U78V53ZN;
 					};
 					0A57B4DE1D04420D00BA9D56 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -244,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A57B4D91D04420D00BA9D56 /* LaunchScreen.storyboard in Resources */,
+				0A57B4FD1D04476F00BA9D56 /* IMG_20150205_144215.jpg in Resources */,
 				0A57B4D61D04420D00BA9D56 /* Assets.xcassets in Resources */,
 				0A57B4D41D04420D00BA9D56 /* Main.storyboard in Resources */,
 			);
@@ -415,10 +420,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 69U78V53ZN;
 				INFOPLIST_FILE = pictureWipe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HaoHao-Studio.pictureWipe";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "图片裁剪";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +436,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 69U78V53ZN;
 				INFOPLIST_FILE = pictureWipe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HaoHao-Studio.pictureWipe";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "图片裁剪";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +513,7 @@
 				0A57B4F51D04420D00BA9D56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A57B4F61D04420D00BA9D56 /* Build configuration list for PBXNativeTarget "pictureWipeTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +522,7 @@
 				0A57B4F81D04420D00BA9D56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A57B4F91D04420D00BA9D56 /* Build configuration list for PBXNativeTarget "pictureWipeUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +531,7 @@
 				0A57B4FB1D04420D00BA9D56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
